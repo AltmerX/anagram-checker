@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Anagram Checker</title>
+</head>
+<body>
+ <form action = "." method = "POST">
+    {% csrf_token %}
+    <div>
+        <label for="str1">Enter string 1:</label>
+        <textarea id="str1" name="str1">
+        </textarea>
+    </div>
+    <div>
+        <label for="str2">Enter string 2:</label>
+        <textarea id="str2" name="str2">
+        </textarea>
+    </div>
+    <div class="button">
+        <button type="submit">Compare</button>
+    </div>
+  </form>
+   <p>Are they anagrams? {{AreAnagrams}}</p>
+</body>
+</html>
