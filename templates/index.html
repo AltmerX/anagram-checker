@@ -2,11 +2,10 @@
 <html>
 <head>
     <title>Anagram Checker</title>
-    <link rel="stylesheet" href="style.css" type="text/css">
 </head>
-<body>
- <h1>Anagram Checker</h1>
- <h2>by Chumeng Xu</h2>
+<body style="background-color: #29A8E5;">
+ <h1 style="text-align: center;font: verdana;color: white;">Anagram Checker</h1>
+ <h2 style="text-align: center;font: verdana;color: lightgrey;">by Chumeng Xu</h2>
  <form action = "." method = "POST">
     <div>
         <label for="str1">Enter string 1:</label>
@@ -20,6 +19,7 @@
         <button type="submit">Compare</button>
     </div>
   </form>
-   <p>Are they anagrams?</p><p id="output"> {{AreAnagrams}}</p>
+   <p style="text-align: center;font: verdana;color: white;">Are they anagrams?</p>
+    <p id="output" style="text-align: center;color: red;"> {{AreAnagrams}}</p>
 </body>
 </html>
