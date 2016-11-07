@@ -3,6 +3,9 @@ import sys
 import os
 
 app = Flask(__name__)
+@app.route("/")
+def Display():
+    return render_template('index.html', AreAnagrams="")    
 
 @app.route("/", methods=['POST'])
 def AnagramChecker():
