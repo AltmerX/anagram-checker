@@ -5,7 +5,9 @@ import os
 app = Flask(__name__)
 @app.route("/")
 def Display():
-    return render_template('index.html', AreAnagrams="")    
+    str1=""
+    str2=""
+    return render_template('index.html', AreAnagrams="", str1=str1, str2=str2)    
 
 @app.route("/", methods=['POST'])
 def AnagramChecker():
@@ -26,7 +28,7 @@ def AnagramChecker():
     ret= "No"
     if hist1==hist2:
         ret="Yes"
-    return render_template('index.html', AreAnagrams=ret)
+    return render_template('index.html', AreAnagrams=ret, str1=str1, str2=str2)
 
 if __name__ == "__main__":
     port = int(os.environ.get('PORT',5000))
