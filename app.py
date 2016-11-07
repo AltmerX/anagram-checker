@@ -23,9 +23,9 @@ def AnagramChecker():
             hist2[i]=0
         else:
             hist2[i]+=1
-    ret= "Yes"
+    ret= "No"
     if hist1==hist2:
-        ret="No"
+        ret="Yes"
     return render_template('index.html', AreAnagrams=ret)
 
 if __name__ == "__main__":
