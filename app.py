@@ -13,6 +13,8 @@ def Display():
 def AnagramChecker():
     str1=request.form['str1']
     str2=request.form['str2']
+    if str1=="" and str2=="":
+        return render_template('index.html', AreAnagrams="Please enter strings!", str1=str1, str2=str2)
     hist1={}
     for i in str1:
         if i not in hist1:
