@@ -1,17 +1,21 @@
+body {
+    background-color: #29A8E5;
+}
+
 h1,p{
-text-align: center;
-font: verdana;
-color: white;
+    text-align: center;
+    font: verdana;
+    color: white;
 }
 
 h2{
-text-align: center;
-font: verdana;
-color: lightgrey;
+    text-align: center;
+    font: verdana;
+    color: lightgrey;
 }
 
 #output {
-text-align: center;
-color: red;
+    text-align: center;
+    color: red;
 }
 
